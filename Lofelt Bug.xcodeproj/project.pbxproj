@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,24 @@
 		6BD9865A26B0C83800D9C44C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD9865926B0C83800D9C44C /* ContentView.swift */; };
 		6BD9865C26B0C83900D9C44C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BD9865B26B0C83900D9C44C /* Assets.xcassets */; };
 		6BD9865F26B0C83900D9C44C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BD9865E26B0C83900D9C44C /* Preview Assets.xcassets */; };
+		6BD9866826B0C86C00D9C44C /* LofeltHaptics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD9866726B0C86C00D9C44C /* LofeltHaptics.xcframework */; };
+		6BD9866926B0C86C00D9C44C /* LofeltHaptics.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD9866726B0C86C00D9C44C /* LofeltHaptics.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6BD9866C26B0C9AF00D9C44C /* Content in Resources */ = {isa = PBXBuildFile; fileRef = 6BD9866B26B0C9AF00D9C44C /* Content */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6BD9866A26B0C86C00D9C44C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6BD9866926B0C86C00D9C44C /* LofeltHaptics.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6BD9865426B0C83800D9C44C /* Lofelt Bug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lofelt Bug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +37,8 @@
 		6BD9865B26B0C83900D9C44C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BD9865E26B0C83900D9C44C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6BD9866026B0C83900D9C44C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BD9866726B0C86C00D9C44C /* LofeltHaptics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LofeltHaptics.xcframework; path = "../../../Downloads/lofelt-sdk-1.2.0/ios-framework/Xcode12AndHigher/LofeltHaptics.xcframework"; sourceTree = "<group>"; };
+		6BD9866B26B0C9AF00D9C44C /* Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Content; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BD9866826B0C86C00D9C44C /* LofeltHaptics.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +58,7 @@
 			children = (
 				6BD9865626B0C83800D9C44C /* Lofelt Bug */,
 				6BD9865526B0C83800D9C44C /* Products */,
+				6BD9866626B0C86C00D9C44C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +73,7 @@
 		6BD9865626B0C83800D9C44C /* Lofelt Bug */ = {
 			isa = PBXGroup;
 			children = (
+				6BD9866B26B0C9AF00D9C44C /* Content */,
 				6BD9865726B0C83800D9C44C /* Lofelt_BugApp.swift */,
 				6BD9865926B0C83800D9C44C /* ContentView.swift */,
 				6BD9865B26B0C83900D9C44C /* Assets.xcassets */,
@@ -69,6 +91,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		6BD9866626B0C86C00D9C44C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BD9866726B0C86C00D9C44C /* LofeltHaptics.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,6 +109,7 @@
 				6BD9865026B0C83800D9C44C /* Sources */,
 				6BD9865126B0C83800D9C44C /* Frameworks */,
 				6BD9865226B0C83800D9C44C /* Resources */,
+				6BD9866A26B0C86C00D9C44C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BD9866C26B0C9AF00D9C44C /* Content in Resources */,
 				6BD9865F26B0C83900D9C44C /* Preview Assets.xcassets in Resources */,
 				6BD9865C26B0C83900D9C44C /* Assets.xcassets in Resources */,
 			);
