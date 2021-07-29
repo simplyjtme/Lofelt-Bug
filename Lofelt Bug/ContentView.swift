@@ -89,6 +89,8 @@ struct ContentView: View {
             .padding()
             .background(Color.gray)
             .cornerRadius(10.0)
+        }.onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
+            haptics = try? LofeltHaptics.init()
         }
     }
 }
